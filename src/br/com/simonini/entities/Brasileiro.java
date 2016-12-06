@@ -6,10 +6,10 @@ public class Brasileiro extends Humano {
 
 	private String name;
 	private String cpf;
-	private Integer age;
+	private int age;
 
 	
-	public Brasileiro(Float mass, Float heigth, Boolean isAlive, String name, String cpf, Integer age) {
+	public Brasileiro(float mass, float heigth, Boolean isAlive, String name, String cpf, Integer age) {
 		super(mass, heigth, isAlive);
 		this.name = name;
 		this.cpf = cpf;
@@ -18,10 +18,10 @@ public class Brasileiro extends Humano {
 
 	public static Brasileiro buildBrasileiro(Scanner scanner) {
 		
-		Float mass;
-		Float heigth;
+		float mass;
+		float heigth;
 		String cpf;
-		Integer age;
+		int age;
 		String name;
 		
 		System.out.println(" -- Entre com os dados do brasileiro que deseja cadastrar: ");

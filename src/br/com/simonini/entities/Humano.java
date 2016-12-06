@@ -2,12 +2,12 @@ package br.com.simonini.entities;
 
 public abstract class Humano {
 	
-	private Float mass;
-	private Float heigth;
-	private Boolean isAlive;
+	private float mass;
+	private float heigth;
+	private boolean isAlive;
 	
 	
-	public Humano(Float mass, Float heigth, Boolean isAlive) {
+	public Humano(float mass, float heigth, Boolean isAlive) {
 		super();
 		this.mass = mass;
 		this.heigth = heigth;
@@ -18,7 +18,7 @@ public abstract class Humano {
 		return mass;
 	}
 	
-	public void setMass(Float mass) {
+	public void setMass(float mass) {
 		this.mass = mass;
 	}
 	
@@ -26,7 +26,7 @@ public abstract class Humano {
 		return heigth;
 	}
 	
-	public void setHeigth(Float heigth) {
+	public void setHeigth(float heigth) {
 		this.heigth = heigth;
 	}
 	
@@ -34,7 +34,7 @@ public abstract class Humano {
 		return isAlive;
 	}
 	
-	public void setIsAlive(Boolean isAlive) {
+	public void setIsAlive(boolean isAlive) {
 		this.isAlive = isAlive;
 	}
 }
