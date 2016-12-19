@@ -5,13 +5,16 @@ import java.util.List;
 import java.util.Scanner;
 
 import br.com.simonini.entities.Brasileiro;
+import br.com.simonini.persistence.HumanoDB;
 
 public class Principal {
 	private static Scanner scanner = new Scanner(System.in);
 	private static List<Brasileiro> brasileiros = new ArrayList<Brasileiro>();
 	private static Integer quantidade;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+		HumanoDB.loadFromFile();
+		
 		introducao();
 		
 		int opcao = 0;
