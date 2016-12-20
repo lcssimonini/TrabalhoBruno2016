@@ -23,7 +23,6 @@ public class Principal {
 			switch (opcao) {
 			case 1:
 				cadastrar();
-				
 				break;
 				
 			case 2:
@@ -35,6 +34,14 @@ public class Principal {
 				break;
 				
 			case 4:
+				sair();
+				break;
+				
+			case 5:
+				sair();
+				break;
+				
+			case 6:
 				sair();
 				break;
 
@@ -49,7 +56,7 @@ public class Principal {
 		quantidade = getQuantidadeCadastros();
 		
 		for (int i = 0; i < quantidade; i++) {
-			brasileiros.add(Brasileiro.buildBrasileiro(scanner));
+			HumanoDB.putBrasileiro(Brasileiro.buildBrasileiro(scanner));
 		}
 	}
 	
@@ -63,9 +70,11 @@ public class Principal {
 		System.out.println(" ----------------------------------------");
 		System.out.println(" -- O que deseja fazer? --  ");
 		System.out.println(" -- 1 - Cadastrar  ");
-		System.out.println(" -- 2 - Listar usando BubbleSort  ");
-		System.out.println(" -- 3 - Listar usando SelectionSort  ");
-		System.out.println(" -- 4 - Sair  ");
+		System.out.println(" -- 2 - Excluir  ");
+		System.out.println(" -- 3 - Buscar registro  ");
+		System.out.println(" -- 4 - Ordenar por nome  ");
+		System.out.println(" -- 5 - Ordenar por idade  ");
+		System.out.println(" -- 6 - Sair  ");
 		System.out.println(" ----------------------------------------");
 		
 		return scanner.nextInt();

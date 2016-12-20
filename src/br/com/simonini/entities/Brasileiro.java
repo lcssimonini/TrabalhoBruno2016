@@ -100,4 +100,9 @@ public class Brasileiro extends Humano {
 			return false;
 		return true;
 	}
+
+	@Override
+	public int compareTo(Brasileiro b) {
+		return this.getName().compareTo(b.getName());
+	}
 }

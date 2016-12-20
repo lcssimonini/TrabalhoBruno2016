@@ -1,6 +1,6 @@
 package br.com.simonini.entities;
 
-public abstract class Humano {
+public abstract class Humano implements Comparable<Brasileiro> {
 	
 	private float mass;
 	private float heigth;
