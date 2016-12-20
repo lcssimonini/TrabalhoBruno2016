@@ -26,7 +26,7 @@ public class Principal {
 				break;
 				
 			case 2:
-				printBrasileirosCadastrados();
+				excluir();
 				break;
 				
 			case 3:
@@ -49,6 +49,20 @@ public class Principal {
 				opcaoInvalida();
 				break;
 			}
+		}
+	}
+
+	private static void excluir() {
+		System.out.println(" ----------------------------------------------------");
+		System.out.println(" -- DIGITE O NOME DO BRASILEIRO QUE DESEJA EXCLUIR --  ");
+		System.out.println(" ----------------------------------------------------");
+		
+		String nome = scanner.nextLine();
+		
+		try {
+			HumanoDB.removeByNome(nome);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 
